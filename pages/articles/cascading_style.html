@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li><a class="menu-link" href="../../index.html">HOME</a></li>
+        <li><a class="menu-link" href="../articles.html">ARTICLES</a></li>
+        <li><a class="menu-link" href="../catalog.html">CATALOG</a></li>
+        <li><a class="menu-link" href="../gallery.html">GALLERY</a></li>
+        <li><a class="menu-link" href="../page-nav.html">NAVIGATION</a></li>
+        <li><a class="menu-link" href="../registration.html">REGISTRATION</a></li>
+        <li><a class="menu-link" href="../contacts.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1 class="page-title">Cascading Style Sheets: Styling the Web</h1>
+      <div class="article-first-letter">
+        <p>Cascading Style Sheets (CSS) is a stylesheet language used to
+          describe the presentation of a document written
+          in a markup language like HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how
+          elements should be rendered on screen, on paper, in speech, or on other media. </p>
+        <p>
+          Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written
+          in a markup language like HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how
+          elements should be rendered on screen, on paper, in speech, or on other media.</p>
+        <p>
+          Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written
+          in a markup language like HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how
+          elements should be rendered on screen, on paper, in speech, or on other media.</p>
+        <h2>The Power of Separation</h2>
+        <p>
+          One of the fundamental principles of CSS is the separation of presentation from content. By keeping the
+          styling rules in separate CSS files or within the &lt;style> tags, developers can maintain a cleaner and more
+          organized codebase. This separation offers several advantages:</p>
+        <p>
+          Improved Maintainability: Changes to the website's design can be made by modifying the CSS files without
+          altering the HTML structure. This simplifies updates and reduces the risk of introducing errors.
+          Enhanced Accessibility: A well-structured HTML document, free from presentational clutter, is more accessible
+          to assistive technologies like screen readers. CSS then enhances the visual presentation without compromising
+          the underlying semantic structure.</p>
+        <p>
+          Greater Consistency: Applying a consistent stylesheet across multiple web pages ensures a unified look and
+          feel throughout the website, enhancing the user experience and brand identity.
+          Reduced File Size: External stylesheets can be cached by the browser, reducing the need to download the same
+          styling information for every page, leading to faster loading times.</p>
+
+        <h2>CSS Syntax: Selectors and Declarations</h2>
+        <p>
+          CSS rules are composed of two main parts: a selector and a declaration block.
+
+          Selectors: Targeting HTML Elements
+
+          Selectors are patterns used to select the HTML (or XML) elements you want to style. There are various types of
+          selectors, allowing for precise targeting:</p>
+        <p>
+          Element Selectors: Target all elements of a specific type (e.g., p for all paragraph elements, h1 for all
+          level-one headings).
+          Class Selectors: Target elements with a specific class attribute (e.g., .button selects all elements with
+          class="button").
+          ID Selectors: Target a unique element with a specific id attribute (e.g., #main-navigation selects the element
+          with id="main-navigation"). ID selectors have high specificity.</p>
+        <p>
+          Attribute Selectors: Target elements based on the presence or value of their attributes (e.g., [type="text"]
+          selects all input elements with the type attribute set to "text").
+          Pseudo-classes: Target elements based on their state or position in the document tree (e.g., :hover styles an
+          element when the user hovers the mouse over it, :first-child selects the first child element).</p>
+        <p>
+          Pseudo-elements: Create virtual elements within the selected element to style specific parts (e.g., ::before
+          inserts something before the content of an element, ::after inserts something after).
+          Combinators: Define relationships between selectors
+          elements that are descendants of elements, child selector ul > li selects all elements that are direct
+          children.</p>
+
+        <h2>Declaration Block: Defining Styles</h2>
+        <p>
+          The declaration block is enclosed in curly braces {} and contains one or more declarations, separated by
+          semicolons. Each declaration consists of a property and a value, separated by a colon.</p>
+        <p>
+          The "Cascading" aspect of CSS refers to how styles are applied when multiple rules target the same element.
+          The browser resolves conflicts based on several factors, including:
+
+          Specificity: Some selectors are more specific than others. For example, an ID selector is more specific than a
+          class selector, which is more specific than an element selector. More specific rules override less specific
+          rules.</p>
+        <p>
+          Inheritance: Some CSS properties are inherited from parent elements to their children. For example, the color
+          property is typically inherited.
+          Source Order: If two rules have the same specificity, the rule that appears later in the CSS source will be
+          applied.
+          Importance: The !important declaration can override all other declarations, regardless of specificity or
+          source order. However, its use is generally discouraged as it can make debugging more difficult.</p>
+
+        <h2>Benefits of Using CSS</h2>
+        <p>
+          Adopting CSS for styling web pages offers numerous advantages:
+
+          Improved User Experience: Well-designed and visually appealing websites can enhance user engagement and
+          satisfaction.
+          Faster Development: CSS facilitates rapid prototyping and design iterations.
+          Cross-Browser Compatibility: While some browser inconsistencies may exist, CSS standards aim for consistent
+          rendering across different browsers.
+          Responsiveness: CSS enables the creation of responsive websites that adapt seamlessly to different screen
+          sizes and devices through techniques like media queries.
+          Accessibility: By separating presentation from content, CSS contributes to more accessible web pages.</p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="container">
+      <h1>Comments</h1>
+      <div id="commentsblock2">
+        <div>
+          <img src="../../img/icon-male-head.png" alt="icon-author" width="34" height="34">
+          <p>James Jones</p>
+          <p>"Clear explanations and helpful examples made learning HTML easy. Great for beginners!"</p>
+        </div>
+        <div>
+          <img src="../../img/icon-male-head.png" alt="icon-author" width="34" height="34">
+          <p>Mike Harries</p>
+          <p>"Concise and informative. Covered the essentials of HTML effectively. Recommended."</p>
+        </div>
+        <div>
+          <img src="../../img/icon-male-head.png" alt="icon-author" width="34" height="34">
+          <p>Bob Lorence</p>
+          <p>"A well-structured article that provided a solid understanding of HTML fundamentals."</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content"> &copy; 2025 Snezhana Kr.</div>
+  </footer>
+</body>
+
+</html>

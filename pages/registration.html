@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li><a class="menu-link" href="../index.html">HOME</a></li>
+        <li><a class="menu-link" href="articles.html">ARTICLES</a></li>
+        <li><a class="menu-link" href="catalog.html">CATALOG</a></li>
+        <li><a class="menu-link" href="gallery.html">GALLERY</a></li>
+        <li><a class="menu-link" href="page-nav.html">NAVIGATION</a></li>
+        <li><a class="menu-link" href="registration.html">REGISTRATION</a></li>
+        <li><a class="menu-link" href="contacts.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1 class="page-title">Registration</h1>
+
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+        <fieldset>
+          <legend> Registration form</legend>
+          <div>
+            <label for="name">Name</label>
+            <input class="form-name-sur" type="text" name="name" id="name" placeholder="Name" required>
+          </div>
+
+          <div class="form-item">
+            <label for="surname">Surname</label>
+            <input class="form-name-sur" type="text" name="surname" id="surname" placeholder="Surname" required>
+          </div>
+
+          <div class="form-item">
+            <label for="photo">Upload your photo</label>
+            <input type="file" name="photo" id="photo">
+          </div>
+
+          <div class="form-item">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+          </div>
+
+          <div class="form-item">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+          </div>
+
+          <div class="form-item">
+            <label for="website">Web adress</label>
+            <input class="web" type="url" name="website" id="website" value="https://mysite.name/">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Select the relevant </legend>
+          <div class="form-item-box">
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+          </div>
+          <div class="form-item-box">
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Date of birth</legend>
+          <div class="form-item-box">
+            <label for="birthday">Choose your date of birth</label>
+            <input type="date" id="birthday" value="2000-01-01">
+
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Experience in development</legend>
+          <div class="form-item-box">
+            <label for="experience">Select the relevant</label>
+            <select name="experience" id="experience" multiple size="3">
+              <option value="" disabled>Choose your experience</option>
+              <option value="Front-End">Front-End Development</option>
+              <option value="UX">User Experience (UX) Implementation</option>
+              <option value="Back-End">Back-End Development Experience</option>
+              <option value="Full-Stack">Full-Stack Development Experience</option>
+              <option value="Specialized">Specialized Web Development Experiences</option>
+              <option value="None">None</option>
+            </select>
+
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose your goals in studying</legend>
+          <div class="form-item-box">
+            <input type="checkbox" name="master" value="master" id="master">
+            <label for="master">Master Front-End Basics</label>
+          </div>
+
+          <div class="form-item-box">
+            <input type="checkbox" name="learn" value="learn" id="learn">
+            <label for="learn">Learn a Modern Front-End Framework</label>
+          </div>
+
+          <div class="form-item-box">
+            <input type="checkbox" name="gain" value="gain" id="gain">
+            <label for="gain">Gain Basic Back-End Skills</label>
+          </div>
+
+          <div class="form-item-box">
+            <input type="checkbox" name="build" value="build" id="build">
+            <label for="build">Build a Project Portfolio</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tell us about your work experience or hobbies </legend>
+          <div class="form-item-box">
+            <label for="about">Write a few words</label>
+            <textarea name="about" id="about" placeholder="Describe your work experience or hobbies" cols="50"
+              rows="10"></textarea>
+
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Confirm or reset</legend>
+          <div class="form-item-box">
+            <button class="form-button" type="submit">Submit</button>
+            <button class="form-button" type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content"> &copy; 2025 Snezhana Kr.</div>
+  </footer>
+</body>
+
+</html>
